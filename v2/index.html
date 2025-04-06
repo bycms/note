@@ -7,11 +7,17 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <header></header><section class="transitional-area"></section>        
+        <header></header><section class="transitional-area"></section>
+        <div id="colorpickers">
+            <label for="text-color">Gradient Color 1:</label>
+            <input type="color" id="text-color" name="text-color" value="#000000">
+            <label for="background-color">Gradient Color 2:</label>
+            <input type="color" id="background-color" name="background-color" value="#ffffff">
+        </div>
         <input type="text" id="title" contenteditable="true" placeholder="Your note title">
         <main>
             <div id="editor">
-                <p id="defPara" contenteditable="true"></p>
+                <div id="defPara" class="block paragraph" contenteditable="true"></div>
             </div>
             <div id="toolbar">
                 <button id="h1" class="addElement">H1</button>
@@ -20,7 +26,6 @@
                 <button id="bullet-list" class="addElement">Bullet List</button>
                 <button id="numbered-list" class="addElement">Numbered List</button>
                 <button id="table" class="addElement">Table</button>
-                <button id="inline-code" class="addElement">Inline Code</button>
                 <button id="code-piece" class="addElement">Code Piece</button>
                 <button id="separator" class="addElement">Separator</button>
             </div>
